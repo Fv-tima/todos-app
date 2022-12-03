@@ -6,7 +6,7 @@ export default function Todos({ input, setInput, todos, setTodos, id }) {
   }
   function submit(e) {
     e.preventDefault();
-    setTodos([...todos, { id, title: input, completed: true }]);
+    setTodos([...todos, { id, title: input, completed: false }]);
     setInput("");
   }
 
