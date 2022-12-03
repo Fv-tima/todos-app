@@ -1,98 +1,56 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Open+Sans:wght@300&display=swap");
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  background: #f5f5f5;
 }
-
-code {
-  font-family: "Inter", sans-serif;
-}
-.container {
+.todos-header {
+  color: rgb(141, 101, 101);
+  font-size: 8em;
   text-align: center;
-  padding: 50px;
+  opacity: 0.4;
 }
-#profile_img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: black;
-}
-h5 {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-}
-button {
-  background-color: #eaecf0;
-  padding: 24px 32px;
-  width: 100%;
-  border: 1px solid #eaecf0;
-  border-radius: 8px;
-  margin: 8px 0;
-  cursor: pointer;
-}
-a {
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-  font-size: 18px;
-  font-family: "Inter", sans-serif;
-}
-.share {
+.todos-form {
+  margin: auto;
+  max-width: 100%;
+  width: 400px;
   display: flex;
-  justify-content: flex-end;
-  align-items: end;
 }
-.share1 {
-  display: none;
+.todos-input {
+  padding: 1rem 1rem;
+  width: 80%;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 10px rgb(141, 101, 101);
 }
-
-.share2 {
-  display: block;
+.todos-input::placeholder {
+  color: rgb(141, 101, 101);
 }
-#slack {
-  display: none;
+.btn {
+  width: 20%;
+  background: rgb(141, 101, 101);
+  color: #f5f5f5;
+  border: none;
+  outline: none;
 }
-footer {
-  margin: 30px 0;
+.todos {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
-.social {
-  padding: 24px 0;
+.todos-list {
+  border: 1px solid #e5e5e5;
+  margin: auto;
+  padding: 1rem 1rem;
+  font-size: 1.2rem;
+  max-width: 100%;
+  width: 365px;
+  text-transform: capitalize;
+  list-style: none;
   display: flex;
-  justify-content: center;
-  column-gap: 40px;
-}
-.designs {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
 }
-.designs p {
-  font-weight: 400;
-  font-size: 14px;
-  color: #667085;
-}
-
-@media (max-width: 700px) {
-  .share {
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
-  }
-  .share1 {
-    display: block;
-  }
-  .share2 {
-    display: none;
-  }
-  .designs {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-  }
+.complete {
+  border-left: 2px solid rgb(141, 101, 101);
 }

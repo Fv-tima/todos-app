@@ -1,17 +1,23 @@
-import Header from "./components/Header.js";
-import Button from "./components/Button.js";
-import Nav from "./components/Nav.js";
-import Footer from "./components/Footer.js";
+import React from "react";
+import { useState } from "react";
+import Todos from "./components/Todos";
+import TodosList from "./components/TodosList";
 
-function App() {
+export default function App() {
+  const [input, setInput] = useState("");
+  const [todos, setTodos] = useState([]);
+  const id = Math.floor(Math.random() * 1000) + 1;
+
   return (
-    <div className="container" >
-      <Nav/>
-      <Header />
-      <Button/>
-      <Footer/>
+    <div className="container">
+      <Todos
+        input={input}
+        setInput={setInput}
+        todos={todos}
+        setTodos={setTodos}
+        id={id}
+      />
+      <TodosList todos={todos} setTodos={setTodos} />
     </div>
   );
 }
-
-export default App;
