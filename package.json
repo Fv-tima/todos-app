@@ -1,7 +1,7 @@
 {
   "name": "my-react-1",
   "version": "0.1.0",
-  "homepage": "https://Fv-tima.github.io/Stage-1",
+  "homepage": "https://Fv-tima.github.io/todos-app",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
