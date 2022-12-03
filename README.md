@@ -1,1 +1,1 @@
-Built this project using react . It stage 1 task given by hng internship
+a todo app built using react. it contains a add feature, completed and delete features
